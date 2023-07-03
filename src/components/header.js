@@ -29,7 +29,7 @@ const Header = () => {
 export default Header;
 
 const Nav = styled.nav`
-  background: red;
+  background: transparent;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -46,7 +46,15 @@ const NavLink = styled(Link)`
   align-items: center;
   height: 100%;
   cursor: pointer;
+  font-size: 20px; /* Increase the font size as desired */
+  font-weight: 700; /* Increase the font weight for bolder text */
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+
+  &:hover {
+    color: #F26A2E; /* Change the color on hover */
+  }
 `;
+
 
 const Bars = styled(FaBars)`
   display: none;
