@@ -51,10 +51,9 @@ const NavLink = styled(Link)`
   transition: color 0.3s ease; /* Add a smooth color transition on hover */
 
   &:hover {
-    color: #F26A2E; /* Change the color on hover */
+    color: #f26a2e; /* Change the color on hover */
   }
 `;
-
 
 const Bars = styled(FaBars)`
   display: none;

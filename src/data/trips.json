@@ -1,0 +1,45 @@
+[
+    {
+      "img": "../assets/images/travel-1.jpg",
+      "alt": "Buddha",
+      "name": "Buddha",
+      "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/travel-2.jpg",
+      "alt": "Eiffel Tower",
+      "name": "Eiffel Tower",
+      "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/travel-3.jpg",
+      "alt": "Pyramids of Giza",
+      "name": "Pyramids of Giza",
+      "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/travel-4.jpg",
+      "alt": "Great Wall of China",
+      "name": "Great Wall of China",
+      "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/travel-5.jpg",
+      "alt": "Santorini",
+      "name": "Santorini",
+      "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/travel-6.jpg",
+      "alt": "Machu Picchu",
+      "name": "Machu Picchu",
+      "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/travel-7.jpg",
+      "alt": "Taj Mahal",
+      "name": "Taj Mahal",
+      "button": "View Destination"
+    }
+  ]
+  
