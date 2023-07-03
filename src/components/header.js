@@ -1,11 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 import { FaBars } from "react-icons/fa";
+import { menuData } from "../data/MenuData";
+import { Button } from "./Button";
+
 const Header = () => {
   return (
     <Nav>
       <NavLink to="/">EXPLORIX</NavLink>
       <Bars />
+      <NavMenu>
+        {menuData.map((item, index) => (
+          <NavLink key={item.index} to={item.link}>
+            {item.title}
+          </NavLink>
+        ))}
+      </NavMenu>
+      <NavBtn>
+        <Button primary="true" round="true" to="/trips">
+          Book a Flight
+        </Button>
+      </NavBtn>
     </Nav>
   );
 };
@@ -22,7 +38,7 @@ const Nav = styled.nav`
   position: relative;
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   padding: 0 1rem;
@@ -44,5 +60,25 @@ const Bars = styled(FaBars)`
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+  }
+`;
+
+const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -48px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const NavBtn = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
