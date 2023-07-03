@@ -1,24 +1,48 @@
 import React from "react";
-import {Link} from "react-router-dom";
-
+import styled from "styled-components";
+import { FaBars } from "react-icons/fa";
 const Header = () => {
   return (
-    <header style={{ background: `rebeccapurple`, marginBottom: `1.45rem` }}>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <h1 style={{ margin: 0 }}>
-          <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-            Site
-          </Link>
-        </h1>
-      </div>
-    </header>
+    <Nav>
+      <NavLink to="/">EXPLORIX</NavLink>
+      <Bars />
+    </Nav>
   );
 };
 
 export default Header;
+
+const Nav = styled.nav`
+  background: red;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1300px) / 2);
+  z-index: 100;
+  position: relative;
+`;
+
+const NavLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+`;
+
+const Bars = styled(FaBars)`
+  display: none;
+  color: #fff;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`;
