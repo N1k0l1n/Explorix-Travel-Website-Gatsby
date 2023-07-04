@@ -1,3 +1,7 @@
+
+
+https://github.com/N1k0l1n/explorix-gatsby/assets/97979235/e83f5d57-851b-48bf-b0fb-7f7e5434e72b
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
