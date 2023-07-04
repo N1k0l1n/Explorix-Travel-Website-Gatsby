@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Hero from "../components/Hero";
 import Trips from "../components/Trips";
 import Testimonials from "../components/Testimonials";
+import Stats from "../components/Stats";
 
 
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
         <Trips heading="Our Favorite Destinations" />
         <Testimonials/>
       </Layout>
+      <Stats/>
     </BrowserRouter>
   );
 };
