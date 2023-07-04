@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { BrowserRouter } from "react-router-dom";
 import Hero from "../components/Hero";
 import Trips from "../components/Trips";
+import Testimonials from "../components/Testimonials";
 
 
 const IndexPage = () => {
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <Layout>
         <Hero />
         <Trips heading="Our Favorite Destinations" />
+        <Testimonials/>
       </Layout>
     </BrowserRouter>
   );

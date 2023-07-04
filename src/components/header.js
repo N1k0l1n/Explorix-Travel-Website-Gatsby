@@ -12,7 +12,7 @@ const Header = () => {
       <Bars />
       <NavMenu>
         {menuData.map((item, index) => (
-          <NavLink key={item.index} to={item.link}>
+          <NavLink key={index} to={item.link}>
             {item.title}
           </NavLink>
         ))}
