@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 import { Button } from "./Button";
 import { ImLocation } from "react-icons/im";
 
-const Trips = ({heading}) => {
+const Trips = ({ heading }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
       allTripsJson {
@@ -29,6 +29,11 @@ const Trips = ({heading}) => {
 
   function getTrips(data) {
     const tripsArray = [];
+
+    if (!data || !data.allTripsJson || !data.allTripsJson.edges) {
+      return tripsArray;
+    }
+
     data.allTripsJson.edges.forEach((item, index) => {
       tripsArray.push(
         <ProductCard key={index}>
@@ -49,7 +54,7 @@ const Trips = ({heading}) => {
               css={`
                 position: absolute;
                 top: 420px;
-                font-size:14px;
+                font-size: 14px;
               `}
             >
               {item.node.button}
@@ -58,6 +63,7 @@ const Trips = ({heading}) => {
         </ProductCard>
       );
     });
+
     return tripsArray;
   }
 
@@ -83,6 +89,7 @@ const ProductsHeading = styled.h1`
   margin-bottom: 5rem;
   color: #000;
 `;
+
 const ProductsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
