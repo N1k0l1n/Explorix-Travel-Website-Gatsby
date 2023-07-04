@@ -10,7 +10,7 @@ const IndexPage = () => {
     <BrowserRouter>
       <Layout>
         <Hero />
-        <Trips />
+        <Trips heading="Our Favorite Destinations" />
       </Layout>
     </BrowserRouter>
   );

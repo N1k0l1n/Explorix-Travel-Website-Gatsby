@@ -40,6 +40,12 @@
       "alt": "Taj Mahal",
       "name": "Taj Mahal",
       "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/travel-8.jpg",
+      "alt": "Kyoto",
+      "name": "Kyoto",
+      "button": "View Destination"
     }
   ]
   
