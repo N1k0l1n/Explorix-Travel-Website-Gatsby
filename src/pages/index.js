@@ -5,7 +5,7 @@ import Hero from "../components/Hero";
 import Trips from "../components/Trips";
 import Testimonials from "../components/Testimonials";
 import Stats from "../components/Stats";
-
+import Email from "../components/Email";
 
 const IndexPage = () => {
   return (
@@ -13,9 +13,10 @@ const IndexPage = () => {
       <Layout>
         <Hero />
         <Trips heading="Our Favorite Destinations" />
-        <Testimonials/>
+        <Testimonials />
       </Layout>
-      <Stats/>
+      <Stats />
+      <Email />
     </BrowserRouter>
   );
 };
